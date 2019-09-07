@@ -15,7 +15,7 @@ namespace MyGarage.Vehicles
             Fuel = 100;
         }
 
-        public void ForwardMovement(string movementName)
+        public void ForwardMovement(string movementName, string vehicleType)
         {
             Fuel -= 10;
 
@@ -26,7 +26,7 @@ namespace MyGarage.Vehicles
                 return;
             }
 
-            Console.WriteLine($"You {movementName} and now have {Fuel} gas left.");
+            Console.WriteLine($"You {movementName} your {vehicleType} and now have {Fuel} gas left.");
         }
 
         public void Brake()

@@ -1,4 +1,5 @@
-﻿using MyGarage.Vehicles;
+﻿using MyGarage.Garage;
+using MyGarage.Vehicles;
 using System;
 
 namespace MyGarage
@@ -7,11 +8,21 @@ namespace MyGarage
     {
         static void Main(string[] args)
         {
-            var myCar = new Car();
-
-            // myCar.Refuel();
+            var myCar = new HondaAccord();
+            myCar.ListFeatures();
+            myCar.Refuel();
             myCar.Drive();
             myCar.Brake();
+
+            var myAircraft = new Aircraft();
+            myAircraft.Refuel();
+            myAircraft.Fly();
+            myAircraft.Brake();
+
+            var myWatercraft = new Watercraft();
+            myWatercraft.Refuel();
+            myWatercraft.Drive();
+            myWatercraft.Brake();
         }
     }
 }
