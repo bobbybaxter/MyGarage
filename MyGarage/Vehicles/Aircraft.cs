@@ -1,10 +1,11 @@
-﻿using System;
+﻿using MyGarage.Interfaces;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
 namespace MyGarage.Vehicles
 {
-    class Aircraft : Vehicle
+    class Aircraft : Vehicle, IFlyer
     {
         public void Fly()
         {

@@ -1,10 +1,11 @@
-﻿using System;
+﻿using MyGarage.Interfaces;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
 namespace MyGarage.Vehicles
 {
-    abstract class Car : Vehicle
+    abstract class Car : Vehicle, IDriver
     {
         public abstract bool hasAutoHighBeams { get; }
         public abstract bool hasHeatedSteeringWheel { get; }
